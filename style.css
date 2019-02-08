@@ -1,0 +1,87 @@
+* {
+	box-sizing: content-box;
+}
+body {
+	color: black;
+	background-image: linear-gradient(#ffffff, #57afd1);
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 24px;
+	height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.moon {
+	width: 20em;
+	height: 20em;
+	border-radius: 50%;
+	overflow: hidden;
+    background-image: url(images/whale.jpg);
+    background-size: 125%;
+    background-position: center;
+    transform: scale(0.25);
+    transition: transform 6s, box-shadow 3s;
+}
+
+#zoom .moon {
+	transform: scale(1);
+}
+
+.trigger {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+	padding: 0;
+	background-color: rgb(50, 109, 219);
+	color: black;
+	line-height: 1.4;
+	border-radius: 50%;
+    font-size: 1.25em;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 1s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0);
+}
+.trigger:hover {
+	box-shadow: 1px 1px 6px rgba(56, 164, 207, 0.5);
+	/*          X   Y   blur colour  */
+}
+
+#zoom .trigger {
+	transform: rotate(135deg);
+}
+
+.eclipse {
+	box-shadow: 10em 0 10em navy inset;
+}
+
+
+h1{
+	color: blue
+}
+
+
+
+
+
+
+
+
+
+
+
+
